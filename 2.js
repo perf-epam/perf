@@ -48,3 +48,27 @@ else{
  }
  else { window.open("/radio_player", "_blank", "width=320, height=260, location=no, menubar=no, scrollbars=no, status=no, titlebar=no, toolbar=no");}
  }
+
+var myNumber = 010;   // Noncompliant. myNumber will hold 8, not 10 - was this really expected?
+
+function say(a, b) {
+  print(a + " " + b);
+}
+
+say("hello", "world", "!"); // Noncompliant; last argument is not used
+
+let value = eval('obj.' + propName); // Sensitive
+let func = Function('obj' + propName); // Sensitive
+
+localStorage.setItem("login", login); // Noncompliant
+sessionStorage.setItem("sessionId", sessionId); // Noncompliant
+
+refs: [
+   {
+      ref: 'mySecondComponentReference',
+      selector: 'field[itemId=mySecondCmp]'
+   }, {
+      ref: 'anotherComponentRef',
+      selector: 'field[itemId=anotherCmp]'
+   }
+]
