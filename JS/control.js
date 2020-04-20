@@ -4,6 +4,7 @@ class Mode {
         this.placeholder = placeholder;
         this.border = border;
         this.url = url;
+        this.url = url;
     }
 
     setup() {
@@ -23,6 +24,11 @@ document.addEventListener('DOMContentLoaded',init);
 
 function init() {
     modeObj = new Mode('web', 'Google', '4px #efd10e solid',srchurl);
+    modeObj.setup();
+}
+
+function ytmode() {
+    modeObj = new Mode('yt', 'YouTube', '4px #ed4343 solid',yturl);
     modeObj.setup();
 }
 
