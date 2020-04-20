@@ -44,7 +44,7 @@ else{
  pause();
  window.open("/radio_player", "_blank", "width=320, height=260, location=no, menubar=no, scrollbars=no, status=no, titlebar=no, toolbar=no");
  setTimeout(switching, 100);
- setTimeout(turned_off, 500);
+ setTimeout(turned_off, 400);
  }
  else { window.open("/radio_player", "_blank", "width=320, height=260, location=no, menubar=no, scrollbars=no, status=no, titlebar=no, toolbar=no");}
  }
