@@ -1,25 +1,22 @@
-var tempPlaylist = "$MYINF_29$";
-myPlaylist = (tempPlaylist.substring(0,tempPlaylist.length-1)).split(';');
-for (i = 0; i < myPlaylist.length; i=i+8) { 
-if (myPlaylist[i]==cid && myPlaylist[i+6]!='')
- if (cid==4 || cid==19)
- {
- cid_arr.push(myPlaylist[i+2]);
- }
-else
-{
-cid_items.push({
- mp3:myPlaylist[i+1],
- title:myPlaylist[i+2],
- artist:myPlaylist[i+3],
- rating:myPlaylist[i+4],
- buy:myPlaylist[i+5],
- duration:myPlaylist[i+6],
- cover:cover_path
- });
+ function radio_wait(next) {
+ setTimeout(radio_info, next);
 }
+function radio() {
+ var el = document.getElementById('radio_img');
+ if (el.src.indexOf("/img/Radio.png")>0){
+ add_audio();
+ setTimeout(switching, 500);
+ play();
+ document.getElementById("current_song").style.display = 'inline';
+ document.getElementById("div_current_song").style.margin = 'auto 5px';
+ radio_info();
+ setTimeout(turned_on, 500);
 }
- }
+else{
+ pause();
+ setTimeout(switching, 100);
+ setTimeout(turned_off, 500);
+}
 
 var data = {
   "key": "value",
