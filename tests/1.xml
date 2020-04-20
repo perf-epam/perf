@@ -1,0 +1,6 @@
+<coverage version="1">
+  <file path="1.js">
+    <lineToCover lineNumber="6" covered="true"/>
+    <lineToCover lineNumber="7" covered="false"/>
+  </file>
+</coverage>
