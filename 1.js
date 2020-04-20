@@ -1,13 +1,3 @@
-refs: [
-   {
-      ref: 'myComponentReference',
-      selector: 'field[itemId=myCmp]'
-   }, {
-      ref: 'otherCmpRef',
-      selector: 'field[itemId=otherCmp]'
-   }
-]
- 
 
 function turned_off () {
  var el = document.getElementById('radio_img');
