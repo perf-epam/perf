@@ -9,3 +9,6 @@ var data = {
   "\x6bey": "value", // Noncompliant - duplicate of "key"
   1: "value" // Noncompliant - duplicate of "1"
 }
+
+var myWindow = document.getElementById('myIFrame').contentWindow;
+myWindow.postMessage(message, "*"); // Noncompliant; how do you know what you loaded in 'myIFrame' is still there?
