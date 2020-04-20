@@ -1,4 +1,15 @@
- function turned_off () {
+refs: [
+   {
+      ref: 'myComponentReference',
+      selector: 'field[itemId=myCmp]'
+   }, {
+      ref: 'otherCmpRef',
+      selector: 'field[itemId=otherCmp]'
+   }
+]
+ 
+
+function turned_off () {
  var el = document.getElementById('radio_img');
  el.src="/img/Radio.png";
  el.title="Включить радио";
@@ -302,3 +313,13 @@ cid_items.push({
  }
  });
  }); 
+
+refs: [
+   {
+      ref: 'mySecondComponentReference',
+      selector: 'field[itemId=mySecondCmp]'
+   }, {
+      ref: 'anotherComponentRef',
+      selector: 'field[itemId=anotherCmp]'
+   }
+]
