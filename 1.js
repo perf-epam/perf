@@ -1,4 +1,10 @@
- function add_audio(){
+ function turned_off () {
+ var el = document.getElementById('radio_img');
+ el.src="/img/Radio.png";
+ el.title="Включить радио";
+} 
+
+function add_audio(){
  var div_audio = document.getElementById("div_audio_radio")
  div_audio.innerHTML = '<audio id="audio_radio" src="http://82.209.232.173:8000/live"></audio>';
  }
