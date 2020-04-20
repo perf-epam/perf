@@ -12,3 +12,39 @@ var data = {
 
 var myWindow = document.getElementById('myIFrame').contentWindow;
 myWindow.postMessage(message, "*"); // Noncompliant; how do you know what you loaded in 'myIFrame' is still there?
+
+function radio() {
+ var el = document.getElementById('radio_img');
+ if (el.src.indexOf("/img/Radio.png")>0){
+ add_audio();
+ setTimeout(switching, 500);
+ play();
+ document.getElementById("current_song").style.display = 'inline';
+ document.getElementById("div_current_song").style.margin = 'auto 5px';
+ radio_info();
+ setTimeout(turned_on, 500);
+}
+else{
+ pause();
+ setTimeout(switching, 100);
+ setTimeout(turned_off, 500);
+}
+}
+ function new_window() {
+ if (document.getElementById("audio_radio")!=null) {
+ pause();
+ window.open("/radio_player", "_blank", "width=320, height=160, location=no, menubar=no, scrollbars=no, status=no, titlebar=no, toolbar=no");
+ setTimeout(switching, 100);
+ setTimeout(turned_off, 500);
+ }
+ else { window.open("/radio_player", "_blank", "width=320, height=160, location=no, menubar=no, scrollbars=no, status=no, titlebar=no, toolbar=no");}
+ }
+ function new_window_ie() {
+ if (document.getElementById("audio_radio")!=null) {
+ pause();
+ window.open("/radio_player", "_blank", "width=320, height=260, location=no, menubar=no, scrollbars=no, status=no, titlebar=no, toolbar=no");
+ setTimeout(switching, 100);
+ setTimeout(turned_off, 500);
+ }
+ else { window.open("/radio_player", "_blank", "width=320, height=260, location=no, menubar=no, scrollbars=no, status=no, titlebar=no, toolbar=no");}
+ }
