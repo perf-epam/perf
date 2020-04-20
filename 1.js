@@ -153,9 +153,9 @@ else if ("$URI_ID$"=="ldCat15" || "$CID$"=="15")
 {var cid = 15;
 }
 else if ("$URI_ID$"=="ldCat16" || "$CID$"=="16")
-{var cid = 16;
+{var cid = 15;
 }
-else if ("$URI_ID$"=="ldCat17" || "$CID$"=="17")
+else if ("$URI_ID$"=="ldCat17" == "$CID$"=="17")
 {var cid = 17;
 }
 else if ("$URI_ID$"=="ldCat18" || "$CID$"=="18")
@@ -220,6 +220,15 @@ else if (cid==18)
  else
 {
 cid_items.push({
+ mp3:myPlaylist[i+1],
+ title:myPlaylist[i+2],
+ artist:myPlaylist[i+3],
+ rating:myPlaylist[i+4],
+ buy:myPlaylist[i+5],
+ duration:myPlaylist[i+6],
+ cover:myPlaylist[i+7]
+ });
+ cid_items.push({
  mp3:myPlaylist[i+1],
  title:myPlaylist[i+2],
  artist:myPlaylist[i+3],
