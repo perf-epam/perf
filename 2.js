@@ -17,6 +17,7 @@ else{
  setTimeout(switching, 100);
  setTimeout(turned_off, 500);
 }
+}
 
 var data = {
   "key": "value",
