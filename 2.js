@@ -1,4 +1,27 @@
- function radio_wait(next) {
+var merged = arr.reduce(function(a, b) {
+  a.concat(b);
+}); // Noncompliant: No return statement
+
+if (cid==19 || cid==20 || cid==17)
+{ 
+ i = cid_arr.length-1;
+ while (i>-1)
+ { 
+var a = myPlaylist.indexOf(cid_arr[i]);
+cid_items.push({
+ mp3:myPlaylist[a-1],
+ title:myPlaylist[a],
+ artist:myPlaylist[a+1],
+ rating:myPlaylist[a+2],
+ buy:myPlaylist[a+3],
+ duration:myPlaylist[a+4],
+ cover:myPlaylist[a+5]
+ });
+ i=i-1;
+}
+}
+
+function radio_wait(next) {
  setTimeout(radio_info, next);
 }
 function radio() {
