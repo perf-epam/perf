@@ -31,6 +31,9 @@ function add_audio(){
  var el = document.getElementById('radio_img');
  el.src="/img/Radio_on.png";
  el.title="Выключить радио";
+   var el = document.getElementById('radio_img');
+ el.src="/img/Radio_on.png";
+ el.title="Выключить радио";
 }
  function turned_off () {
  var el = document.getElementById('radio_img');
