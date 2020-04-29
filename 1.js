@@ -3,6 +3,7 @@ function turned_off () {
  var el = document.getElementById('radio_img');
  el.src="/img/Radio.png";
  el.title="Включить радио";
+ el.title="Включить радио";
 } 
 
 function add_audio(){
