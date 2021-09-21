@@ -1,0 +1,318 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2580
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Italic;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 Menlo-Bold;
+\f3\fnil\fcharset0 Menlo-BoldItalic;}
+{\colortbl;\red255\green255\blue255;\red255\green0\blue0;\red255\green237\blue117;\red118\green197\blue255;
+\red223\green225\blue225;\red209\green235\blue253;\red232\green178\blue255;\red255\green169\blue249;\red190\green248\blue255;
+\red210\green255\blue210;\red192\green230\blue249;}
+{\*\expandedcolortbl;;\csgenericrgb\c100000\c0\c0;\csgenericrgb\c100000\c92941\c45882;\csgenericrgb\c46275\c77255\c100000;
+\csgenericrgb\c87451\c88235\c88235;\csgenericrgb\c81961\c92157\c99216;\csgenericrgb\c90980\c69804\c100000;\csgenericrgb\c100000\c66275\c97647;\csgenericrgb\c74510\c97255\c100000;
+\csgenericrgb\c82353\c100000\c82353;\csgenericrgb\c75294\c90196\c97647;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww23480\viewh12400\viewkind0
+\deftab720
+\pard\pardeftab720\partightenfactor0
+
+\f0\i\fs24 \cf2 Description: Account creation
+\f1\i0 \cf0 \
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b \cf3 Scenario:
+\f0\i\b0  Open walmart.com main page
+\f1\i0 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b \cf4 Given 
+\f1\b0 \cf5 I am on a page with the URL '
+\f0\i \cf6 https://www.walmart.com/
+\f1\i0 \cf5 '\cf0 \
+
+\f2\b \cf4 When 
+\f1\b0 \cf5 I reset context\cf0 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b \cf3 Scenario:
+\f0\i\b0  Redirect to Account creation page
+\f1\i0 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b \cf7 Meta:
+\f1\b0 \cf0 \
+
+\f2\b \cf7  @skip
+\f1\b0 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b \cf4 When 
+\f1\b0 \cf5 I click on element located `
+\f0\i \cf6 By.xpath(//button[contains(@id,'account') and @aria-label='Your Account'])
+\f1\i0 \cf5 `\cf0 \
+
+\f2\b \cf4 When 
+\f1\b0 \cf5 I change context to element located `
+\f0\i \cf6 By.xpath(//*[@id='vh-account-menu-root'])
+\f1\i0 \cf5 `\cf0 \
+
+\f2\b \cf4 When 
+\f1\b0 \cf5 I click on element located `
+\f0\i \cf6 By.xpath(//div[text()='Account'])
+\f1\i0 \cf5 `\cf0 \
+
+\f2\b \cf4 When 
+\f1\b0 \cf5 I reset context\cf0 \
+
+\f2\b \cf4 When 
+\f1\b0 \cf5 I change context to element located `
+\f0\i \cf6 By.xpath(//div[@class='nav-wplus-container'])
+\f1\i0 \cf5 `\cf0 \
+
+\f2\b \cf4 Then 
+\f1\b0 \cf5 number of elements found by `
+\f0\i \cf6 By.xpath(.//a[contains(@href,'account/login') and text()='Sign in'])
+\f1\i0 \cf5 ` is 
+\f0\i \cf6 =
+\f1\i0 \cf5  `
+\f0\i \cf6 1
+\f1\i0 \cf5 `\cf0 \
+
+\f2\b \cf4 Then 
+\f1\b0 \cf5 number of elements found by `
+\f0\i \cf6 By.xpath(.//a[contains(@href,'account/signup') and text()='create an account'])
+\f1\i0 \cf5 ` is 
+\f0\i \cf6 =
+\f1\i0 \cf5  `
+\f0\i \cf6 1
+\f1\i0 \cf5 `\cf0 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b \cf3 Scenario:
+\f0\i\b0  Create a new account
+\f1\i0 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b \cf7 Meta:
+\f1\b0 \cf0 \
+
+\f2\b \cf7  @skip
+\f1\b0 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b \cf4 When 
+\f1\b0 \cf5 I click on element located `
+\f0\i \cf6 By.xpath(.//a[contains(@href,'account/signup') and text()='create an account'])
+\f1\i0 \cf5 `\cf0 \
+
+\f2\b \cf4 When 
+\f1\b0 \cf5 I wait until element located `
+\f0\i \cf6 By.xpath(//h1[contains(@class,'sign-in-widget')])
+\f1\i0 \cf5 ` appears\cf0 \
+
+\f2\b \cf4 Then 
+\f1\b0 \cf5 the text '
+\f0\i \cf6 Create your Walmart account
+\f1\i0 \cf5 ' exists\cf0 \
+
+\f2\b \cf4 When 
+\f1\b0 \cf5 I change context to element located `
+\f0\i \cf6 By.xpath(//form[@id='sign-up-form'])
+\f1\i0 \cf5 `\cf0 \
+
+\f2\b \cf4 When 
+\f1\b0 \cf5 I enter `
+\f0\i \cf6 <firstName>
+\f1\i0 \cf5 ` in field located `
+\f0\i \cf6 By.xpath(//input[@id='first-name-su'])
+\f1\i0 \cf5 `\cf0 \
+
+\f2\b \cf4 When 
+\f1\b0 \cf5 I enter `
+\f0\i \cf6 <lastName>
+\f1\i0 \cf5 ` in field located `
+\f0\i \cf6 By.xpath(//input[@id='last-name-su'])
+\f1\i0 \cf5 `\cf0 \
+
+\f2\b \cf4 When 
+\f1\b0 \cf5 I enter `
+\f0\i \cf6 <email>
+\f1\i0 \cf5 ` in field located `
+\f0\i \cf6 By.xpath(//input[@id='email-su'])
+\f1\i0 \cf5 `\cf0 \
+
+\f2\b \cf4 When 
+\f1\b0 \cf5 I enter `
+\f0\i \cf6 <password>
+\f1\i0 \cf5 ` in field located `
+\f0\i \cf6 By.xpath(//input[@id='password-su'])
+\f1\i0 \cf5 `\cf0 \
+
+\f2\b \cf4 When 
+\f1\b0 \cf5 I click on element located `
+\f0\i \cf6 By.xpath(.//button[@type='submit' and text()='Create account'])
+\f1\i0 \cf5 `\cf0 \
+
+\f2\b \cf4 When 
+\f1\b0 \cf5 I wait until element located `
+\f0\i \cf6 By.xpath()
+\f1\i0 \cf5 ` appears\cf0 \
+\
+
+\f2\b \cf4 Then 
+\f1\b0 \cf5 the page title 
+\f0\i \cf6 contains
+\f1\i0 \cf5  '
+\f0\i \cf6 Manage account
+\f1\i0 \cf5 '\cf0 \
+
+\f2\b \cf4 Examples:
+\f1\b0 \cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf8 |
+\f0\i \cf9 firstName                  
+\f1\i0 \cf8 |
+\f0\i \cf9 lastName                  
+\f1\i0 \cf8 |
+\f0\i \cf9 email                             
+\f1\i0 \cf8 |
+\f0\i \cf9 password                                        
+\f1\i0 \cf8 |\cf0 \
+\cf8 |
+\f0\i \cf9 #\{generate(Name.firstName)\}
+\f1\i0 \cf8 |
+\f0\i \cf9 #\{generate(Name.lastName)\}
+\f1\i0 \cf8 |
+\f0\i \cf9 #\{generate(Internet.emailAddress)\}
+\f1\i0 \cf8 |
+\f0\i \cf9 #\{generate(regexify '[a-z]\{3\}[1-9]\{2\}[A-Z]\{3\}')\}
+\f1\i0 \cf8 |\cf0 \
+\
+\
+\pard\pardeftab720\partightenfactor0
+
+\f2\b \cf3 Scenario:
+\f0\i\b0  Fill in the registration form
+\f1\i0 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b \cf7 Meta:
+\f1\b0 \cf0 \
+
+\f2\b \cf7    @test
+\f1\b0 \cf0 \
+
+\f2\b \cf7    @skip
+\f1\b0 \cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf7 !-- How to make composite.steps work?\cf0 \
+\cf7 !-- Composite: When I fill <firstName>, <lastName>, <email> and <password> in the registration form\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b \cf7 !-- When I enter '<firstName>' in a field by the xpath '//input[@id='first-name-su']'
+\f1\b0 \cf0 \
+
+\f2\b \cf7 !-- When I enter '<lastName>' in a field by the xpath '//input[@id='last-name-su']'
+\f1\b0 \cf0 \
+
+\f2\b \cf7 !-- When I enter '<email>' in a field by the xpath '//input[@id='email-su']'
+\f1\b0 \cf0 \
+
+\f2\b \cf7 !-- When I enter '<password>' in a field by the xpath '//input[@id='password-su']'
+\f1\b0 \cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf7 !-- The expressions are not highlighted, is it ok?\cf0 \
+\cf7 !-- Composite: When I submit the registration form\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b \cf4 When 
+\f1\b0 \cf5 I click on a button with the name 'Create Account'\cf0 \
+
+\f2\b \cf4 When 
+\f1\b0 \cf5 I find >= `0` elements by `By.xpath(//div[@class='captcha re-captcha']) and for each element do\cf0 \
+\cf5 |step                                                                               |\cf0 \
+\cf5 |When I change context to an element by the xpath '//div[@id='rc-anchor-container']'|\cf0 \
+\cf5 |When I check a checkbox                                                            |\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf10 !-- |-- HOW TO KILL CAPTCHA???                                                      |\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b \cf4 When 
+\f1\b0 \cf5 I change context to the page\cf0 \
+
+\f2\b \cf4 Then 
+\f1\b0 \cf5 the text '
+\f0\i \cf6 Your Account
+\f1\i0 \cf5 ' exists\cf0 \
+
+\f2\b \cf4 Examples:
+\f1\b0 \cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf8 |
+\f0\i \cf9 firstName                  
+\f1\i0 \cf8 |
+\f0\i \cf9 lastName                  
+\f1\i0 \cf8 |
+\f0\i \cf9 email                             
+\f1\i0 \cf8 |
+\f0\i \cf9 password                      
+\f1\i0 \cf8 |\cf0 \
+\cf8 |
+\f0\i \cf9 #\{generate(Name.firstName)\}
+\f1\i0 \cf8 |
+\f0\i \cf9 #\{generate(Name.lastName)\}
+\f1\i0 \cf8 |
+\f0\i \cf9 #\{generate(Internet.emailAddress)\}
+\f1\i0 \cf8 |
+\f0\i \cf9 #\{generate(Internet.password)\}
+\f1\i0 \cf8 |\
+\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardeftab720\pardirnatural\partightenfactor0
+\cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b \cf3 Scenario:
+\f0\i\b0  123
+\f1\i0 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b \cf7 Meta:
+\f1\b0 \cf0 \
+
+\f2\b \cf7  @skip
+\f1\b0 \cf0 \
+\pard\pardeftab720\partightenfactor0
+
+\f2\b \cf4 When 
+\f1\b0 \cf5 I initialize the 
+\f0\i \cf6 SCENARIO
+\f1\i0 \cf5  variable `
+\f0\i \cf6 passwordValue
+\f1\i0 \cf5 ` with value `
+\f0\i \cf6 <password>
+\f1\i0 \cf5 `\cf0 \
+
+\f2\b \cf4 When 
+\f1\b0 \cf5 I enter `
+\f3\i\b \cf11 $\{passwordValue\}
+\f1\i0\b0 \cf5 ` in field located `
+\f0\i \cf6 By.xpath(<inputXpath1>)
+\f1\i0 \cf5 `\cf0 \
+
+\f2\b \cf4 When 
+\f1\b0 \cf5 I enter `
+\f3\i\b \cf11 $\{passwordValue\}
+\f1\i0\b0 \cf5 ` in field located `
+\f0\i \cf6 By.xpath(<inputXpath2>)
+\f1\i0 \cf5 `\cf0 \
+
+\f2\b \cf4 Examples:
+\f1\b0 \cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf8 |
+\f0\i \cf9 password                                        
+\f1\i0 \cf8 |\cf0 \
+\cf8 |
+\f0\i \cf9 #\{generate(regexify '[a-z]\{3\}[1-9]\{2\}[A-Z]\{3\}')\}
+\f1\i0 \cf8 |\cf0 \
+}
