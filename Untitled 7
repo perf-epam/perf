@@ -1,0 +1,123 @@
+{
+  "series": [
+    "JCLOUDTEST"
+  ],
+  "data": [
+    {
+      "category": "2021 Jun",
+      "values": [
+        0
+      ],
+      "attributes": [
+        {
+          "JCLOUDTEST": {
+            "issues": [],
+            "hintValues": {
+              "hv1": "2021 Jun",
+              "hv2": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "category": "2021 Jul",
+      "values": [
+        0
+      ],
+      "attributes": [
+        {
+          "JCLOUDTEST": {
+            "issues": [],
+            "hintValues": {
+              "hv1": "2021 Jul",
+              "hv2": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "category": "2021 Aug",
+      "values": [
+        0
+      ],
+      "attributes": [
+        {
+          "JCLOUDTEST": {
+            "issues": [],
+            "hintValues": {
+              "hv1": "2021 Aug",
+              "hv2": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "category": "2021 Sep",
+      "values": [
+        0
+      ],
+      "attributes": [
+        {
+          "JCLOUDTEST": {
+            "issues": [],
+            "hintValues": {
+              "hv1": "2021 Sep",
+              "hv2": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "category": "2021 Oct",
+      "values": [
+        0
+      ],
+      "attributes": [
+        {
+          "JCLOUDTEST": {
+            "issues": [],
+            "hintValues": {
+              "hv1": "2021 Oct",
+              "hv2": 0
+            }
+          }
+        }
+      ]
+    },
+    {
+      "category": "2021 Nov",
+      "values": [
+        0
+      ],
+      "attributes": [
+        {
+          "JCLOUDTEST": {
+            "issues": [],
+            "hintValues": {
+              "hv1": "2021 Nov",
+              "hv2": 0
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "attributes": {
+    "JCLOUDTEST": {
+      "hintTemplates": {
+        "JCLOUDTEST": "<strong>Month:</strong> {hv1}<br/><strong>Changed requirements:</strong> {hv2}<br/>"
+      },
+      "drillDownTitles": {
+        "JCLOUDTEST": "Changed requirements"
+      },
+      "categoriesToExcludeFromTrend": [
+        "2021 Nov"
+      ]
+    }
+  },
+  "calculationDate": 1636745348802
+}
