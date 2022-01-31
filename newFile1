@@ -1,0 +1,433 @@
+{
+  "series": [
+    "epm-dce/epm-health-tests:master",
+    "epm-dce/epm-perf-tests:master"
+  ],
+  "data": [
+    {
+      "category": "epm-dce/epm-health-tests:master",
+      "values": [
+        {
+          "series": [
+            "V"
+          ],
+          "data": [
+            {
+              "category": "diana_gafurova@epam.com on 2022-01-26 08:44:13",
+              "values": [
+                3
+              ],
+              "attributes": [
+                {
+                  "V": {
+                    "hintValues": {
+                      "hv1": "2022-01-26 08:44:13",
+                      "hv2": "Diana Gafurova",
+                      "hv3": 3,
+                      "hv4": 3,
+                      "hv5": 0,
+                      "hv6": "fix smoke and regression for qa and external\n",
+                      "hv7": "cd68e096b16e0fac8b038b1c150075dd70d6d329"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "category": "marta_apanasenka@epam.com on 2022-01-26 09:08:20",
+              "values": [
+                3
+              ],
+              "attributes": [
+                {
+                  "V": {
+                    "hintValues": {
+                      "hv1": "2022-01-26 09:08:20",
+                      "hv2": "Marta Apanasenka",
+                      "hv3": 3,
+                      "hv4": 3,
+                      "hv5": 0,
+                      "hv6": "Merge branch 'fix_smoke' into 'master'\n\nFix: smoke for qa and external, regression for qa\n\nSee merge request epm-dce/epm-health-tests!647",
+                      "hv7": "28ccf657e4b78b687da15d6f0670d5d3c9ba630c"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "category": "marta_apanasenka@epam.com on 2022-01-21 08:29:03",
+              "values": [
+                44
+              ],
+              "attributes": [
+                {
+                  "V": {
+                    "hintValues": {
+                      "hv1": "2022-01-21 08:29:03",
+                      "hv2": "Marta Apanasenka",
+                      "hv3": 44,
+                      "hv4": 23,
+                      "hv5": 21,
+                      "hv6": "Merge branch 'stg_login_fix' into 'master'\n\nFix: stg login and sidebar opening composite\n\nSee merge request epm-dce/epm-health-tests!644",
+                      "hv7": "026f6c002dbf5bacea3739525fb28477f4b69407"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "category": "Kseniya_Molastava@epam.com on 2022-01-25 12:33:36",
+              "values": [
+                52
+              ],
+              "attributes": [
+                {
+                  "V": {
+                    "hintValues": {
+                      "hv1": "2022-01-25 12:33:36",
+                      "hv2": "Kseniya Molastava",
+                      "hv3": 52,
+                      "hv4": 22,
+                      "hv5": 30,
+                      "hv6": "Change composite\n",
+                      "hv7": "57dee6c7f99e79845384a5306262aef00077e98f"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "category": "marta_apanasenka@epam.com on 2022-01-26 08:39:39",
+              "values": [
+                52
+              ],
+              "attributes": [
+                {
+                  "V": {
+                    "hintValues": {
+                      "hv1": "2022-01-26 08:39:39",
+                      "hv2": "Marta Apanasenka",
+                      "hv3": 52,
+                      "hv4": 22,
+                      "hv5": 30,
+                      "hv6": "Merge branch 'stgFixSmoke' into 'master'\n\nSmoke fix for stg env\n\nSee merge request epm-dce/epm-health-tests!646",
+                      "hv7": "8a25090c64686b257e28ced93b897da4ed91f3cf"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "category": "marta_apanasenka@epam.com on 2022-01-22 10:28:40",
+              "values": [
+                410
+              ],
+              "attributes": [
+                {
+                  "V": {
+                    "hintValues": {
+                      "hv1": "2022-01-22 10:28:40",
+                      "hv2": "Marta Apanasenka",
+                      "hv3": 410,
+                      "hv4": 293,
+                      "hv5": 117,
+                      "hv6": "Merge branch 'EPMDCEHLTH-49098regress' into 'master'\n\nEPMDCEHLTH-49098: adaptation GDPR stories in regression for new layout\n\nSee merge request epm-dce/epm-health-tests!642",
+                      "hv7": "c2e168e7854c043a36c468681b1e9cf6e0f48cb5"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "category": "valery_bryket@epam.com on 2022-01-26 14:27:48",
+              "values": [
+                416
+              ],
+              "attributes": [
+                {
+                  "V": {
+                    "hintValues": {
+                      "hv1": "2022-01-26 14:27:48",
+                      "hv2": "Valery Bryket",
+                      "hv3": 416,
+                      "hv4": 391,
+                      "hv5": 25,
+                      "hv6": "Core 2873 ga structure updates\n",
+                      "hv7": "e029fa673b9fac7d70add29ca53f90398d7767a6"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "category": "valery_bryket@epam.com on 2022-01-26 14:27:49",
+              "values": [
+                416
+              ],
+              "attributes": [
+                {
+                  "V": {
+                    "hintValues": {
+                      "hv1": "2022-01-26 14:27:49",
+                      "hv2": "Valery Bryket",
+                      "hv3": 416,
+                      "hv4": 391,
+                      "hv5": 25,
+                      "hv6": "Merge branch 'CORE-2873-GAStructureUpdates' into 'master'\n\nCore 2873 ga structure updates\n\nSee merge request epm-dce/epm-health-tests!645",
+                      "hv7": "3bf007703e9506d6626156763ac69566a9d20288"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "category": "valery_bryket@epam.com on 2022-01-21 10:13:15",
+              "values": [
+                3774
+              ],
+              "attributes": [
+                {
+                  "V": {
+                    "hintValues": {
+                      "hv1": "2022-01-21 10:13:15",
+                      "hv2": "Valery Bryket",
+                      "hv3": 3774,
+                      "hv4": 3761,
+                      "hv5": 13,
+                      "hv6": "Global admin\n",
+                      "hv7": "83ebeb00c4426b63202f6676712e2344a7ac2d6d"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "attributes": [
+        {},
+        null
+      ]
+    },
+    {
+      "category": "epm-dce/epm-perf-tests:master",
+      "values": [
+        {
+          "series": [
+            "V"
+          ],
+          "data": [
+            {
+              "category": "alesia_skamarokh@epam.com on 2022-01-24 14:42:25",
+              "values": [
+                38
+              ],
+              "attributes": [
+                {
+                  "V": {
+                    "hintValues": {
+                      "hv1": "2022-01-24 14:42:25",
+                      "hv2": "Alesia Skamarokh",
+                      "hv3": 38,
+                      "hv4": 19,
+                      "hv5": 19,
+                      "hv6": "Merge branch 'EPMDCEPERF-5972-API-Metric-Calculation-suite-updating' into 'master'\n\nEPMDCEPERF-5972-API-Metric-Calculation-suite-updating\n\nSee merge request epm-dce/epm-perf-tests!713",
+                      "hv7": "0fe30bb0ca1557e8f938bff453b65f0f1eacc877"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "category": "alesia_skamarokh@epam.com on 2022-01-24 12:21:30",
+              "values": [
+                38
+              ],
+              "attributes": [
+                {
+                  "V": {
+                    "hintValues": {
+                      "hv1": "2022-01-24 12:21:30",
+                      "hv2": "Alesia Skamarokh",
+                      "hv3": 38,
+                      "hv4": 19,
+                      "hv5": 19,
+                      "hv6": "EPMDCEPERF-5972-API-Metric-Calculation-suite-updating\n",
+                      "hv7": "d784e97424f0acab6a15fdb9ab7af2bfcafa4a49"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "category": "volha_homan@epam.com on 2022-01-21 11:07:49",
+              "values": [
+                258
+              ],
+              "attributes": [
+                {
+                  "V": {
+                    "hintValues": {
+                      "hv1": "2022-01-21 11:07:49",
+                      "hv2": "Volha Homan",
+                      "hv3": 258,
+                      "hv4": 157,
+                      "hv5": 101,
+                      "hv6": "Merge branch 'EPMDCEPERF-5956-Automation-tests-maintenance-Ext-environment-dump-creation' into 'master'\n\nEPMDCEPERF-5956-Automation-tests-maintenance-Ext-environment-dump-creation:...\n\nSee merge reque",
+                      "hv7": "172c642cdd16e5a8af6f4dbef42000f79cf11b77"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "category": "volha_homan@epam.com on 2022-01-21 09:06:13",
+              "values": [
+                258
+              ],
+              "attributes": [
+                {
+                  "V": {
+                    "hintValues": {
+                      "hv1": "2022-01-21 09:06:13",
+                      "hv2": "Volha Homan",
+                      "hv3": 258,
+                      "hv4": 157,
+                      "hv5": 101,
+                      "hv6": "EPMDCEPERF-5956-Automation-tests-maintenance-Ext-environment-dump-creation: fixes of fails; user guide help link changes; Access-control.story skipped until is fixed\n",
+                      "hv7": "979e991dbecc6843be9f342a067ac8d28d72ce35"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "category": "volha_homan@epam.com on 2022-01-28 10:49:10",
+              "values": [
+                525
+              ],
+              "attributes": [
+                {
+                  "V": {
+                    "hintValues": {
+                      "hv1": "2022-01-28 10:49:10",
+                      "hv2": "Volha Homan",
+                      "hv3": 525,
+                      "hv4": 303,
+                      "hv5": 222,
+                      "hv6": "EPMDCEPERF-5970-Restore-projects-for-automation-testing-on-v1: auto tests refactoring; properties updates\n",
+                      "hv7": "27f8470aa56a16586210e301ad172390a780dfd3"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "category": "volha_homan@epam.com on 2022-01-28 11:45:21",
+              "values": [
+                525
+              ],
+              "attributes": [
+                {
+                  "V": {
+                    "hintValues": {
+                      "hv1": "2022-01-28 11:45:21",
+                      "hv2": "Volha Homan",
+                      "hv3": 525,
+                      "hv4": 303,
+                      "hv5": 222,
+                      "hv6": "Merge branch 'EPMDCEPERF-5970-Restore-projects-for-automation-testing-on-v1' into 'master'\n\nEPMDCEPERF-5970-Restore-projects-for-automation-testing-on-v1: auto tests...\n\nSee merge request epm-dce/epm-",
+                      "hv7": "875b607b0079ee43393c30a6e852be859d40db6f"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "category": "alesia_skamarokh@epam.com on 2022-01-21 09:28:18",
+              "values": [
+                6437
+              ],
+              "attributes": [
+                {
+                  "V": {
+                    "hintValues": {
+                      "hv1": "2022-01-21 09:28:18",
+                      "hv2": "Alesia Skamarokh",
+                      "hv3": 6437,
+                      "hv4": 6437,
+                      "hv5": 0,
+                      "hv6": "Merge branch 'EPMDCEPERF-5934-Incident-3603-automation' into 'master'\n\nEPMDCEPERF-5934-Incident-3603-automation\n\nSee merge request epm-dce/epm-perf-tests!710",
+                      "hv7": "643c8d049367e2e075ea2411b589cb4ab21c662a"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "category": "alesia_skamarokh@epam.com on 2022-01-21 14:25:08",
+              "values": [
+                7273
+              ],
+              "attributes": [
+                {
+                  "V": {
+                    "hintValues": {
+                      "hv1": "2022-01-21 14:25:08",
+                      "hv2": "Alesia Skamarokh",
+                      "hv3": 7273,
+                      "hv4": 7267,
+                      "hv5": 6,
+                      "hv6": "Merge branch 'EPMDCEPERF-5962-Incident-5637-automation' into 'master'\n\nEPMDCEPERF-5962-Incident-5739-automation\n\nSee merge request epm-dce/epm-perf-tests!712",
+                      "hv7": "6148ae892190c9df8612800b54b0b132615dba38"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "category": "alesia_skamarokh@epam.com on 2022-01-21 10:32:01",
+              "values": [
+                7273
+              ],
+              "attributes": [
+                {
+                  "V": {
+                    "hintValues": {
+                      "hv1": "2022-01-21 10:32:01",
+                      "hv2": "Alesia Skamarokh",
+                      "hv3": 7273,
+                      "hv4": 7267,
+                      "hv5": 6,
+                      "hv6": "EPMDCEPERF-5962-Incident-5637-automation\n",
+                      "hv7": "1b84bc036d094ea9b814330dffcfba24573c1533"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ],
+      "attributes": [
+        null,
+        {}
+      ]
+    }
+  ],
+  "attributes": {
+    "epm-dce/epm-perf-tests:master": {
+      "externalLink": "https://git.epam.com/epm-dce/epm-perf-tests",
+      "hintTemplates": {
+        "V": "<strong>Date/time:</strong> {hv1}<br/><strong>Committer name:</strong> {hv2}<br/><strong>Commit size:</strong> {hv3} lines ({hv4} added, {hv5} deleted)<br/><strong>Commit comment:</strong> {hv6}<br/><strong>Commit hash:</strong> {hv7}<br/>"
+      }
+    },
+    "epm-dce/epm-health-tests:master": {
+      "externalLink": "https://git.epam.com/epm-dce/epm-health-tests",
+      "hintTemplates": {
+        "V": "<strong>Date/time:</strong> {hv1}<br/><strong>Committer name:</strong> {hv2}<br/><strong>Commit size:</strong> {hv3} lines ({hv4} added, {hv5} deleted)<br/><strong>Commit comment:</strong> {hv6}<br/><strong>Commit hash:</strong> {hv7}<br/>"
+      }
+    }
+  },
+  "calculationDate": 1643396600537
+}

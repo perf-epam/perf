@@ -1,0 +1,145 @@
+{
+  "datasetName": "Animals",
+  "columns": [
+    {
+      "field": "id",
+      "flex": 1,
+      "sortable": false,
+      "type": "Numeric",
+      "width": 140,
+      "values": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9"
+      ],
+      "types": {
+        
+      }
+    },
+    {
+      "field": "quality",
+      "flex": 1,
+      "sortable": false,
+      "type": "Text",
+      "width": 140,
+      "values": [
+        "Good",
+        "Nice",
+        "Poor",
+        "Low",
+        "High",
+        "Average",
+        "Appropriate",
+        "Medium",
+        "Trivial"
+      ],
+      "types": {
+        
+      }
+    },
+    {
+      "field": "responsible",
+      "flex": 1,
+      "sortable": false,
+      "type": "Text",
+      "width": 140,
+      "values": [
+        "Harry",
+        "Ron",
+        "Hermiona",
+        "Meggy",
+        "Dambldor",
+        "Sevirus",
+        "Drako",
+        "Wolandemort",
+        "Nevil"
+      ],
+      "types": {
+        
+      }
+    },
+    {
+      "field": "faculty",
+      "flex": 1,
+      "sortable": false,
+      "type": "Text",
+      "width": 140,
+      "values": [
+        "Gryffindor",
+        "Gryffindor",
+        "Gryffindor",
+        "Ravenclaw",
+        "Ravenclaw",
+        "Ravenclaw",
+        "Slytherin",
+        "Slytherin",
+        "Hufflepuff"
+      ],
+      "types": {
+        
+      }
+    }
+  ],
+  "rows": [
+    {
+      "id": "1",
+      "quality": "Good",
+      "responsible": "Harry",
+      "faculty": "Gryffindor"
+    },
+    {
+      "id": "2",
+      "quality": "Nice",
+      "responsible": "Ron",
+      "faculty": "Gryffindor"
+    },
+    {
+      "id": "3",
+      "quality": "Poor",
+      "responsible": "Hermiona",
+      "faculty": "Gryffindor"
+    },
+    {
+      "id": "4",
+      "quality": "Low",
+      "responsible": "Meggy",
+      "faculty": "Ravenclaw"
+    },
+    {
+      "id": "5",
+      "quality": "High",
+      "responsible": "Dambldor",
+      "faculty": "Ravenclaw"
+    },
+    {
+      "id": "6",
+      "quality": "Average",
+      "responsible": "Sevirus",
+      "faculty": "Ravenclaw"
+    },
+    {
+      "id": "7",
+      "quality": "Appropriate",
+      "responsible": "Drako",
+      "faculty": "Slytherin"
+    },
+    {
+      "id": "8",
+      "quality": "Medium",
+      "responsible": "Wolandemort",
+      "faculty": "Slytherin"
+    },
+    {
+      "id": "9",
+      "quality": "Trivial",
+      "responsible": "Nevil",
+      "faculty": "Hufflepuff"
+    }
+  ]
+}
