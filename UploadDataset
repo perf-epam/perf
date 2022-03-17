@@ -1,0 +1,46 @@
+Scenario: Upload dataset as a custom metric (New) with data
+When I have Key Staff SSO token
+Given I initialize the SCENARIO variable `datasetRequest` using template `templates/customMetrics/DatasetRequestBody.ftl` with parameters:
+||
+||
+Given request body: ${datasetRequest}
+When I issue a HTTP POST request for a resource with the URL '${main-page-url}perf/custom-metric/api/v1/unit/${customMetricNew_extId}/datasets'
+Then the response code is = '200'
+When I save JSON element from context by JSON path `$.datasetId` to STORY variable `datasetId`
+
+
+Scenario: Add a metric name (validate name)
+Given request body: {
+  "name": "<datasetName>"
+}
+When I have Key Staff SSO token
+When I issue a HTTP POST request for a resource with the URL '${main-page-url}perf/custom-metric/api/v1/unit/${customMetricNew_extId}/datasets/validation'
+Then the response code is = '200'
+Then the response body IS_EQUAL_TO 'true'
+
+
+Scenario: Verify the dataset was uploaded
+When I have Key Staff SSO token
+When I issue a HTTP GET request for a resource with the URL '${main-page-url}perf/custom-metric/api/v1/unit/${customMetricNew_extId}/datasets'
+Then the response code is = '200'
+Then the response body CONTAINS '${datasetId}'
+Then the response body CONTAINS '<datasetName>'
+
+
+Scenario: Add custom metric to the list of metrics
+When I add a custom metric to the metrics list
+When I have Key Staff SSO token
+When I issue a HTTP POST request for a resource with the URL '${main-page-url}perf/custom-metric/api/v1/unit/${customMetricNew_extId}/metric'
+Then the response code is = '200'
+When I save JSON element from context by JSON path `$.[?(@.name=="<customMetricTitle>")].id` to SCENARIO variable `oldMetricId`
+When I initialize the STORY variable `metricId` with value `#{replaceAllByRegExp((^\[|\]$), """""", ${oldMetricId})}`
+
+
+Scenario: Build a metric from the uploaded dataset
+When I build a custom metric from the uploaded dataset
+When I have Key Staff SSO token
+When I issue a HTTP PUT request for a resource with the URL '${main-page-url}perf/custom-metric/api/v1/unit/${customMetricNew_extId}/metric/${metricId}'
+Then the response code is = '200'
+Then the response body CONTAINS '${metricId}'
+Then the response body CONTAINS '<customMetricTitle>'
+Then the response body CONTAINS 'createdAt'
