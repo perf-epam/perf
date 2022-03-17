@@ -1,10 +1,12 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2580
+{\rtf1\ansi\ansicpg1252\cocoartf2636
 \cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset0 Menlo-Bold;\f2\fnil\fcharset0 Menlo-Italic;
 }
-{\colortbl;\red255\green255\blue255;\red255\green237\blue117;\red118\green197\blue255;\red223\green225\blue225;
-\red209\green235\blue253;}
-{\*\expandedcolortbl;;\csgenericrgb\c100000\c92941\c45882;\csgenericrgb\c46275\c77255\c100000;\csgenericrgb\c87451\c88235\c88235;
-\csgenericrgb\c81961\c92157\c99216;}
+{\colortbl;\red255\green255\blue255;\red255\green237\blue117;\red118\green197\blue255;\red255\green237\blue117;
+\red118\green197\blue255;\red223\green225\blue225;\red209\green235\blue253;\red255\green169\blue249;\red190\green248\blue255;
+\red210\green255\blue210;}
+{\*\expandedcolortbl;;\csgenericrgb\c100000\c92941\c45882;\csgenericrgb\c46275\c77255\c100000;\csgenericrgb\c100000\c92941\c45882;
+\csgenericrgb\c46275\c77255\c100000;\csgenericrgb\c87451\c88235\c88235;\csgenericrgb\c81961\c92157\c99216;\csgenericrgb\c100000\c66275\c97647;\csgenericrgb\c74510\c97255\c100000;
+\csgenericrgb\c82353\c100000\c82353;}
 \paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
 \deftab720
 \pard\pardeftab720\partightenfactor0
@@ -19,51 +21,243 @@
 \f0\i0 \cf0 \
 \pard\pardeftab720\partightenfactor0
 
-\f1\b \cf3 When 
-\f0\b0 \cf4 I change context to element located `
-\f2\i \cf5 By.xpath(//*[@data-e2e='data-source-panel__<dsDisabled>'])
-\f0\i0 \cf4 `\cf0 \
+\f1\b \cf3 \
+\pard\pardeftab720\partightenfactor0
+\cf4 Scenario:
+\f2\i\b0  Open main application page
+\f0\i0 \cf0 \
 
-\f1\b \cf3 When 
-\f0\b0 \cf4 I click on element located `
-\f2\i \cf5 By.xpath(.//*[text()='Activate'])
-\f0\i0 \cf4 `\cf0 \
+\f1\b \cf5 \ul \ulc5 When 
+\f0\b0 \cf6 \ulc6 I login as QA Admin\cf0 \ulnone \
+\
+\
 
-\f1\b \cf3 When 
-\f0\b0 \cf4 I change context to element located `
-\f2\i \cf5 By.xpath(//*[@role='dialog'])
-\f0\i0 \cf4 `\cf0 \
+\f1\b \cf4 Scenario:
+\f2\i\b0  Redirection to the Project page
+\f0\i0 \cf0 \
 
-\f1\b \cf3 Then 
-\f0\b0 \cf4 the text matches '
-\f2\i \cf5 Activate Data Source?
-\f0\i0 \cf4 '\cf0 \
+\f1\b \cf5 When 
+\f0\b0 \cf6 I click on element located `
+\f2\i \cf7 By.xpath(<searchButtonQA>)
+\f0\i0 \cf6 `\cf0 \
 
-\f1\b \cf3 Then 
-\f0\b0 \cf4 the text matches '
-\f2\i \cf5 All the related metrics will start the calculation after the Data Source activation.*
-\f0\i0 \cf4 '\cf0 \
+\f1\b \cf5 When 
+\f0\b0 \cf6 I change context to element located `
+\f2\i \cf7 By.xpath(<dialogueWindow>)
+\f0\i0 \cf6 `\cf0 \
 
-\f1\b \cf3 Then 
-\f0\b0 \cf4 number of elements found by `
-\f2\i \cf5 By.xpath(.//*[@data-e2e='dialog__cancel-button' and not (@disabled)])
-\f0\i0 \cf4 ` is 
-\f2\i \cf5 =
-\f0\i0 \cf4  `
-\f2\i \cf5 1
-\f0\i0 \cf4 `\cf0 \
+\f1\b \cf5 When 
+\f0\b0 \cf6 I enter `
+\f2\i \cf7 <projectTitle_4>
+\f0\i0 \cf6 ` in field located `
+\f2\i \cf7 By.xpath(.//input)
+\f0\i0 \cf6 `\cf0 \
 
-\f1\b \cf3 Then 
-\f0\b0 \cf4 number of elements found by `
-\f2\i \cf5 By.xpath(.//*[@data-e2e='dialog__action-button' and not (@disabled)])
-\f0\i0 \cf4 ` is 
-\f2\i \cf5 =
-\f0\i0 \cf4  `
-\f2\i \cf5 1
-\f0\i0 \cf4 `\cf0 \
+\f1\b \cf5 When 
+\f0\b0 \cf6 I wait until element located `
+\f2\i \cf7 By.xpath(//*[@draggable]/*[text()='<projectTitle_4>'])
+\f0\i0 \cf6 ` appears\cf0 \
 
-\f1\b \cf3 When 
-\f0\b0 \cf4 I click on element located `
-\f2\i \cf5 By.xpath(//*[@data-e2e='dialog__action-button' and not (@disabled)])
-\f0\i0 \cf4 `\cf0 \
+\f1\b \cf5 When 
+\f0\b0 \cf6 I click on element located `
+\f2\i \cf7 By.xpath(//*[@draggable]/*[text()='<projectTitle_4>'])
+\f0\i0 \cf6 `\cf0 \
+
+\f1\b \cf5 When 
+\f0\b0 \cf6 I reset context\cf0 \
+
+\f1\b \cf5 When 
+\f0\b0 \cf6 I click on element located `
+\f2\i \cf7 By.xpath((<buttonToConfigDSonQA>)[1])
+\f0\i0 \cf6 `\cf0 \
+\
+\
+
+\f1\b \cf4 Scenario:
+\f2\i\b0  Checking configured Data Sources exist on the Project page
+\f0\i0 \cf0 \
+
+\f1\b \cf5 When 
+\f0\b0 \cf6 I switch to frame located `
+\f2\i \cf7 By.xpath(<frameDSonQA>)
+\f0\i0 \cf6 `\cf0 \
+
+\f1\b \cf5 When 
+\f0\b0 \cf6 I wait until element located `
+\f2\i \cf7 By.xpath(//*[contains(@class,'spinner')])
+\f0\i0 \cf6 ` disappears\cf0 \
+
+\f1\b \cf5 When 
+\f0\b0 \cf6 I change context to element located `
+\f2\i \cf7 By.xpath(<settingsScreen>)
+\f0\i0 \cf6 `\cf0 \
+
+\f1\b \cf5 When 
+\f0\b0 \cf6 I click on element located `
+\f2\i \cf7 By.caseSensitiveText(Data Sources)
+\f0\i0 \cf6 `\cf0 \
+
+\f1\b \cf5 When 
+\f0\b0 \cf6 I wait until element located `
+\f2\i \cf7 By.xpath(//*[contains(@class,'spinner')])
+\f0\i0 \cf6 ` disappears\cf0 \
+\
+\
+
+\f1\b \cf4 Scenario:
+\f2\i\b0  Checking configured Data Sources exist on the Project page (by DS name)
+\f0\i0 \cf0 \
+
+\f1\b \cf5 Then 
+\f0\b0 \cf6 number of elements found by `
+\f2\i \cf7 By.xpath(//*[@data-e2e='data-source-panel__<dsName>'])
+\f0\i0 \cf6 ` is 
+\f2\i \cf7 =
+\f0\i0 \cf6  `
+\f2\i \cf7 1
+\f0\i0 \cf6 `\cf0 \
+
+\f1\b \cf5 Examples:
+\f0\b0 \cf0 \
+\cf8 |
+\f2\i \cf9 dsName 
+\f0\i0 \cf8 |\cf0 \
+\cf8 |
+\f2\i \cf9 <DS_8> 
+\f0\i0 \cf8 |\cf0 \
+\cf8 |
+\f2\i \cf9 <DS_10>
+\f0\i0 \cf8 |\cf0 \
+\cf8 |
+\f2\i \cf9 <DS_11>
+\f0\i0 \cf8 |\cf0 \
+\
+\
+
+\f1\b \cf4 Scenario:
+\f2\i\b0  Checking previous Data Load has status 'Succeed'
+\f0\i0 \cf0 \
+\cf10 !-- This scenario checks whether previously started DL was successful and if the scenario fails, it means that the main test failed and requires investigation of reasons\cf0 \
+
+\f1\b \cf5 When 
+\f0\b0 \cf6 I change context to element located `
+\f2\i \cf7 By.xpath(//*[@data-e2e='data-source-panel__<dsName>'])
+\f0\i0 \cf6 `\cf0 \
+
+\f1\b \cf5 Then 
+\f0\b0 \cf6 number of elements found by `
+\f2\i \cf7 By.xpath(.<statusIcon>)
+\f0\i0 \cf6 ` is 
+\f2\i \cf7 =
+\f0\i0 \cf6  `
+\f2\i \cf7 1
+\f0\i0 \cf6 `\cf0 \
+
+\f1\b \cf5 When 
+\f0\b0 \cf6 I hover mouse over element located `
+\f2\i \cf7 By.xpath(.<statusIcon>)
+\f0\i0 \cf6 `\cf0 \
+
+\f1\b \cf5 When 
+\f0\b0 \cf6 I wait until state of element located `
+\f2\i \cf7 By.xpath(//*[@role='tooltip'])
+\f0\i0 \cf6 ` is 
+\f2\i \cf7 VISIBLE
+\f0\i0 \cf0 \
+
+\f1\b \cf5 When 
+\f0\b0 \cf6 I change context to element located `
+\f2\i \cf7 By.xpath(.//*[@role='tooltip'])
+\f0\i0 \cf6 `\cf0 \
+
+\f1\b \cf5 Then 
+\f0\b0 \cf6 the text matches '
+\f2\i \cf7 Succeed
+\f0\i0 \cf6 '\cf0 \
+
+\f1\b \cf5 Examples:
+\f0\b0 \cf0 \
+\cf8 |
+\f2\i \cf9 dsName 
+\f0\i0 \cf8 |
+\f2\i \cf9 statusIcon                                                     
+\f0\i0 \cf8 |\cf0 \
+\cf8 |
+\f2\i \cf9 <DS_8> 
+\f0\i0 \cf8 |
+\f2\i \cf9 //*[@data-e2e='multi-data-source-status-info__status-icon']/*/*
+\f0\i0 \cf8 |\cf0 \
+\cf8 |
+\f2\i \cf9 <DS_10>
+\f0\i0 \cf8 |
+\f2\i \cf9 //*[@data-e2e='single-data-source__status_icon']/*/*           
+\f0\i0 \cf8 |\cf0 \
+\cf8 |
+\f2\i \cf9 <DS_11>
+\f0\i0 \cf8 |
+\f2\i \cf9 //*[@data-e2e='multi-data-source-status-info__status-icon']/*/*
+\f0\i0 \cf8 |\cf0 \
+\
+\
+
+\f1\b \cf4 Scenario:
+\f2\i\b0  Starting a new Data Load for the configured Data Source
+\f0\i0 \cf0 \
+
+\f1\b \cf5 When 
+\f0\b0 \cf6 I change context to element located `
+\f2\i \cf7 By.xpath(//*[@data-e2e='list-data-source-pg__run-data-load'])
+\f0\i0 \cf6 `\cf0 \
+
+\f1\b \cf5 When 
+\f0\b0 \cf6 I click on element located `
+\f2\i \cf7 By.xpath(//*[@data-e2e='list-data-source-pg__run-data-load'])
+\f0\i0 \cf6 `\cf0 \
+
+\f1\b \cf5 When 
+\f0\b0 \cf6 I change context to element located `
+\f2\i \cf7 By.xpath(//*[@role='menu'])
+\f0\i0 \cf6 `\cf0 \
+
+\f1\b \cf5 When 
+\f0\b0 \cf6 I click on element located `
+\f2\i \cf7 By.xpath(//*[text()='Full Update'])
+\f0\i0 \cf6 `\cf0 \
+\
+\
+
+\f1\b \cf4 Scenario:
+\f2\i\b0  Checking that Data Load has started
+\f0\i0 \cf0 \
+
+\f1\b \cf5 When 
+\f0\b0 \cf6 I change context to element located `
+\f2\i \cf7 By.xpath(//*[@data-e2e='data-source-panel__<dsName>'])
+\f0\i0 \cf6 `\cf0 \
+
+\f1\b \cf5 Then 
+\f0\b0 \cf6 number of elements found by `
+\f2\i \cf7 By.xpath(//*[@data-e2e='multi-data-source-status-info__status-icon']/*/*)
+\f0\i0 \cf6 ` is 
+\f2\i \cf7 >=
+\f0\i0 \cf6  `
+\f2\i \cf7 1
+\f0\i0 \cf6 `\cf0 \
+
+\f1\b \cf5 Examples:
+\f0\b0 \cf0 \
+\cf8 |
+\f2\i \cf9 dsName 
+\f0\i0 \cf8 |\cf0 \
+\cf8 |
+\f2\i \cf9 <DS_8> 
+\f0\i0 \cf8 |\cf0 \
+\cf8 |
+\f2\i \cf9 <DS_10>
+\f0\i0 \cf8 |\cf0 \
+\cf8 |
+\f2\i \cf9 <DS_11>
+\f0\i0 \cf8 |\cf0 \
+\pard\pardeftab720\partightenfactor0
+\cf0 \
 }

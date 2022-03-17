@@ -416,16 +416,8 @@
     }
   ],
   "attributes": {
-    "epm-dce/epm-perf-tests:master": {
-      "externalLink": "https://git.epam.com/epm-dce/epm-perf-tests",
-      "hintTemplates": {
-        "V": "<strong>Date/time:</strong> {hv1}<br/><strong>Committer name:</strong> {hv2}<br/><strong>Commit size:</strong> {hv3} lines ({hv4} added, {hv5} deleted)<br/><strong>Commit comment:</strong> {hv6}<br/><strong>Commit hash:</strong> {hv7}<br/>"
-      }
-    },
-    "epm-dce/epm-health-tests:master": {
-      "externalLink": "https://git.epam.com/epm-dce/epm-health-tests",
-      "hintTemplates": {
-        "V": "<strong>Date/time:</strong> {hv1}<br/><strong>Committer name:</strong> {hv2}<br/><strong>Commit size:</strong> {hv3} lines ({hv4} added, {hv5} deleted)<br/><strong>Commit comment:</strong> {hv6}<br/><strong>Commit hash:</strong> {hv7}<br/>"
+      "INIT-AMR-WEB-jenkins-master": {
+        "externalLink": "https://amway.codefactori.com/sonarqube/component_measures/metric/comment_lines_density/list?id=INIT-AMR-WEB-jenkins-master"
       }
     }
   },
