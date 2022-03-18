@@ -1,0 +1,57 @@
+{
+  "id": "9b592423-adbf-455f-9ae1-ebe6cb82021b",
+  "name": "GlobalAggrFilter",
+  "ownerExternalId": "system@email.com",
+  "isShared": false,
+  "isDefault": false,
+  "items": [
+    {
+      "name": "streamNameFilter",
+      "unitType": "STREAM",
+      "params": [
+        {
+          "name": "path.parent",
+          "controlType": "ASYNC_PICKER",
+          "valueType": "LABEL",
+          "values": [
+            {
+              "id": "8503000000000004509"
+            }
+          ],
+          "defaultValues": []
+        }
+      ]
+    }
+  ],
+  "createdAt": "2021-12-17T13:42:35.861038",
+  "updatedAt": "2021-12-17T13:42:35.861038"
+}
+
+{
+  "id": "fb315794-03eb-467a-b641-b358ae665705",
+  "name": "GlobalAggrFilter",
+  "ownerExternalId": "dc-manual-user-a88a49a891c1b0229cd8d84461d86022",
+  "isShared": false,
+  "isDefault": false,
+  "items": [
+    {
+      "name": "streamNameFilter",
+      "unitType": "STREAM",
+      "params": [
+        {
+          "name": "path.parent",
+          "controlType": "ASYNC_PICKER",
+          "valueType": "LABEL",
+          "values": [
+            {
+              "id": "8503000000000004509"
+            }
+          ],
+          "defaultValues": []
+        }
+      ]
+    }
+  ],
+  "createdAt": "2021-12-17T16:03:46.128603",
+  "updatedAt": "2021-12-17T16:03:46.128603"
+}
